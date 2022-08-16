@@ -1,1 +1,1 @@
-export const apiPath = "https://f988-58-65-186-88.ngrok.io/api";
+export const apiPath = "https://image-croper.herokuapp.com/api";
