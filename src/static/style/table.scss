@@ -1,0 +1,57 @@
+.task-table {
+  table {
+    width: 100%;
+    tr{
+      height: 70px;
+    }
+    td {
+      width: 20%;
+      p {
+        margin: 0px;
+      }
+    }
+  }
+}
+.reservation-table {
+  table {
+    width: 100%;
+    p {
+      margin: 0px;
+    }
+    tr{
+      height: 70px;
+    }
+    th {
+      width: 20%;
+    }
+    td {
+      width: 20%;
+    }
+  }
+}
+.table-timeslot {
+  table {
+    width: 100%;
+  }
+}
+.table-width-95{
+  width: 95%;
+}
+.table-width-100{
+  width: 100%;
+}
+.table-td-width-10{
+  width: 10%;
+}
+.table-td-width-15{
+  width: 15%;
+}
+.table-td-width-75{
+  width: 75%;
+}
+.table-tr-height-150{
+  height: 150px;
+}
+.table-tr-height-600{
+  height: 600px;
+}

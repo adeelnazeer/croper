@@ -1,0 +1,48 @@
+.main-div-content-sign-up {
+  display: flex;
+  justify-content: center;
+  .sign-up-content {
+    // text-align: center;
+    .heading-discover {
+      font-size: 2.75rem;
+      text-align: center;
+    }
+  }
+  .form-main {
+    padding: 100px;
+    input {
+      width: 100%;
+      padding: 10px 10px 10px 10px;
+    }
+  }
+  .enter-email-heading {
+    text-align: center;
+  }
+  .button-Main {
+    text-align: center;
+    button {
+      border: navajowhite;
+      background: #f6f6f6;
+      padding: 6px 30px 6px 30px;
+      color: #9c9a9a;
+      outline: none;
+    }
+  }
+  .input-group{
+      flex-wrap: nowrap;
+      border-radius: 5px;;
+      button{
+          width: 100%;
+          border: none;
+          outline: none;
+      }
+      .input-group-text{
+          border: none;
+          padding: 0;
+      }
+      img{
+          height: 32px;
+          width: 36px;
+      }
+  }
+}
