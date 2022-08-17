@@ -48,8 +48,7 @@ export default function App() {
   let user = JSON.parse(localStorage.getItem("user"));
   let token = localStorage.getItem("Token");
 
-
-  useEffect(() => {
+  const getData=()=>{
     setLoader(true);
     let header = {
       headers: {
@@ -66,6 +65,11 @@ export default function App() {
         message.error("Something went wrong try again");
         setLoader(false);
       });
+  }
+
+
+  useEffect(() => {
+    getData()
   }, []);
 
   function onSelectFile(e) {
@@ -336,6 +340,7 @@ export default function App() {
         onImageLoad={onImageLoad}
         title={title}
         imgRef={imgRef}
+        getData={getData}
       />
     </div>
   );

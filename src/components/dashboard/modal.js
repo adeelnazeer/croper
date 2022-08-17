@@ -31,6 +31,7 @@ const App = (props) => {
     onImageLoad,
     previewCanvasRef,
     title,
+    getData
   } = props;
 
   const handleOk = async () => {
@@ -50,6 +51,7 @@ const App = (props) => {
     axios
       .post(`${apiPath}/image/update/${title?.id}`, form, header)
       .then((response) => {
+        getData()
         setBorder(false);
         setShowModal(false);
         message.success("Image croped successfully");
@@ -107,12 +109,7 @@ const App = (props) => {
           <Button key="submit" type="primary" onClick={handleCancel}>
             Cancel
           </Button>,
-          <Button
-            key="link"
-            href="https://google.com"
-            type="primary"
-            onClick={handleOk}
-          >
+          <Button type="primary" onClick={handleOk}>
             Ok
           </Button>,
         ]}
