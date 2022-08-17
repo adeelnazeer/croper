@@ -6,6 +6,7 @@ import axios from "axios";
 import { apiPath } from "../../config";
 import FormData from "form-data";
 import { useHistory } from "react-router-dom";
+import Dummy from "../../static/assests/2020-01-27.png";
 
 export default () => {
   const history = useHistory();
@@ -111,7 +112,11 @@ export default () => {
 
                 <div>
                   <img
-                    src={data?.profile_image_path}
+                    src={
+                      data?.profile_image_path === null
+                        ? Dummy
+                        : data?.profile_image_path
+                    }
                     alt=""
                     style={{
                       width: "50px",
